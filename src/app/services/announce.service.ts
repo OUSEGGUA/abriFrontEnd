@@ -18,4 +18,8 @@ export class AnnounceService {
     return this.http.get<Announce[]>(baseUrl+"/findAll");
   }
 
+  create(announce: any): Observable<any> {
+  return this.http.post(baseUrl+"/add", announce); 
+ }
+
 }

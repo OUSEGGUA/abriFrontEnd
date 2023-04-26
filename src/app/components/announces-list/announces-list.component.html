@@ -1,13 +1,16 @@
 <div class="list row">
-    <div class="col-md-6">
-      <h4>Tutorials List</h4>
-      <ul class="list-group">
-        <li
-          class="list-group-item"
-          *ngFor="let tutorial of announces; let i = index"
-        >
-          {{ tutorial.title }}
-        </li>
-      </ul>
-    </div>
+  <div class="col-md-6">
+    <h4>Announces List</h4>
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let announce of announces; let i = index">
+        {{ announce.id }}<br>
+        {{ announce.title }}<br>
+        {{ announce.description }}<br>
+        {{ announce.minPrice }}<br>
+        {{ announce.maxPrice }}<br>
+        {{ announce.dateAnnounce }}<br>
+        {{ announce.status }}<br>
+      </li>
+    </ul>
   </div>
+</div>

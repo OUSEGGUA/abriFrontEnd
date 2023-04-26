@@ -15,11 +15,11 @@ export class AnnouncesListComponent  implements OnInit{
 
 
   ngOnInit(): void {
-    this.retrieveTutorials();
+    this.retrieveAnnounces();
   }
 
 
-  retrieveTutorials(): void {
+  retrieveAnnounces(): void {
     this.announceService.getAll()
       .subscribe({
         next: (data) => {

@@ -7,11 +7,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnnouncesListComponent } from './components/announces-list/announces-list.component';
+import { AddAnnounceComponent } from './components/add-announce/add-announce.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AnnouncesListComponent
+    AnnouncesListComponent,
+    AddAnnounceComponent
   ],
   imports: [
     BrowserModule,
