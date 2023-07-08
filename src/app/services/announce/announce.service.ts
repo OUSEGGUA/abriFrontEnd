@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Announce } from '../models/announce.model';
+import { Announce } from '../../models/announce/announce.model';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 

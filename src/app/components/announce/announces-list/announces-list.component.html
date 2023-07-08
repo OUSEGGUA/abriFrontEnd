@@ -1,0 +1,22 @@
+
+<div class="container">
+  <div class="row  gx-2 my-5">
+    <div class="col-3" *ngFor="let announce of announces; let i = index">
+      
+<div class="card my-2" >
+  <img src="assets/images/house-image.avif" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h6> <span class="badge bg-secondary"> {{ announce.status }}</span></h6>
+
+    <h5 class="card-title">{{ announce.title }}</h5>
+    <p class="card-text">{{ announce.description }}</p>
+    <p>
+      <span class="badge text-bg-info">{{ announce.minPrice }} dhs</span>
+      <span class="badge text-bg-info">{{ announce.maxPrice }} dhs</span>
+    </p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+  </div>
+</div>

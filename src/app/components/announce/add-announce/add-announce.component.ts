@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Announce } from 'src/app/models/announce.model';
-import { AnnounceService } from 'src/app/services/announce.service';
+import { Announce } from 'src/app/models/announce/announce.model';
+import { AnnounceService } from 'src/app/services/announce/announce.service';
 
 @Component({
   selector: 'app-add-announce',

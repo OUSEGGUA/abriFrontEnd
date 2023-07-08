@@ -1,0 +1,42 @@
+.container {
+    max-width: 960px;
+  }
+  
+
+  /*
+   * Dummy devices (replace them with your own or something else entirely!)
+   */
+  
+.cover{
+  background-image: url("src/assets/images/home_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+  
+  /*
+   * Extra utilities
+   */
+  
+  .flex-equal > * {
+    flex: 1;
+  }
+  @media (min-width: 768px) {
+    .flex-md-equal > * {
+      flex: 1;
+    }
+  }
+  
+
+  .bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
