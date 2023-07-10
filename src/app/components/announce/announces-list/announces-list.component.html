@@ -1,5 +1,10 @@
+<p class="currentUser">Vous êtes connectez en tant que: Proprietaire</p>
 
 <div class="container">
+  <a class="btn btn-outline-secondary" routerLink="/add">Ajouter une announce</a>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    
+  </div>
   <div class="row  gx-2 my-5">
     <div class="col-3" *ngFor="let announce of announces; let i = index">
       
@@ -14,7 +19,10 @@
       <span class="badge text-bg-info">{{ announce.minPrice }} dhs</span>
       <span class="badge text-bg-info">{{ announce.maxPrice }} dhs</span>
     </p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
+    <div class="btns">
+      <a class="btn btn-primary" href="http://localhost:4200/byId/{{announce.id}}">plus de détails</a>
+      <a class="btn btn-primary" href="http://localhost:4200/byId/{{announce.id}}">Proposition</a>
+    </div>
   </div>
 </div>
     </div>

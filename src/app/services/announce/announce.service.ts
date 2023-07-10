@@ -15,11 +15,17 @@ export class AnnounceService {
   constructor(private http: HttpClient) { }
 
   getAll(): Observable<Announce[]> {
-    return this.http.get<Announce[]>(baseUrl+"/findAll");
+    return this.http.get<Announce[]>(baseUrl + "/findAll");
   }
 
   create(announce: any): Observable<any> {
-  return this.http.post(baseUrl+"/add", announce); 
- }
+    return this.http.post(baseUrl + "/add", announce);
+  }
+
+
+  getById(id: any): Observable<Announce> {
+    console.log(id);
+    return this.http.get<Announce>(baseUrl +"/findById/"+id);
+  }
 
 }

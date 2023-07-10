@@ -13,6 +13,9 @@ import { FindUserByEmailComponent } from './components/user/find-user-by-email/f
 import { AddPropertyComponent } from './components/property/add-property/add-property.component';
 import { FindPropertyComponent } from './components/property/find-property/find-property.component';
 import { HomeComponent } from './home/home.component';
+import { AnnounceGetByIdComponent } from './components/announce/announce-get-by-id/announce-get-by-id.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { HomeComponent } from './home/home.component';
     FindUserByEmailComponent,
     AddPropertyComponent,
     FindPropertyComponent,
-    HomeComponent
+    HomeComponent,
+    AnnounceGetByIdComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

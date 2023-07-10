@@ -1,34 +1,12 @@
 <div class="container">
-  <h1>Ajouter un utilisateur</h1>
 <div>
   <div class="submit-form">
     <div *ngIf="!submitted">
-      <div class="form-group">
-        <label for="firstName">Nom</label><br>
-        <input type="text" class="form-control" id="firstName" required [(ngModel)]="user.firstName" name="firstName" />
-      </div>
+    
       <pre></pre>
 
-      <div class="form-group">
-        <label for="lastName">Prénom</label><br>
-        <input class="form-control" id="lastName" required [(ngModel)]="user.lastName" name="lastName" />
-      </div>
-      <pre></pre>
+
       
-      <div class="form-group">
-        <label for="cin">Cin</label><br>
-        <input class="form-control" id="cin" required [(ngModel)]="user.cin" name="cin" />
-      </div>
-      <pre></pre>
-
-      <div class="form-group">
-        <label for="lastName">je suis proprietaire</label><br>
-        <input type="checkbox"  id="lastName" required [(ngModel)]="isOwner" name="isOwner" />
-      </div>
-      <pre></pre>
-
-
-      <button (click)="saveUser()" class="btn btn-success">Submit</button>
     </div>
 
     <div *ngIf="submitted">
@@ -37,3 +15,41 @@
   </div>
 </div>
 </div>
+
+
+
+    <div class="container">
+        <form action="" method="post" class="sign-form" id="sign-form" autocomplete="on">
+            <h1 class="form-title">Inscription</h1>
+          
+            <br>
+
+            <label for="username">Nom<span class="star-required">*</span></label>
+            <input type="text" name="username" id="firstName" placeholder="nom" autofocus required [(ngModel)]="user.firstName" name="firstName">
+
+            <label for="username">Prénom<span class="star-required">*</span></label>
+            <input type="text" name="username" id="firstName" placeholder="prénom" autofocus required [(ngModel)]="user.lastName" name="firstName">
+
+            <label for="username">CIN<span class="star-required">*</span></label>
+            <input type="text" name="username" id="cin" placeholder="CIN" autofocus required [(ngModel)]="user.cin" name="firstName">
+
+
+
+
+
+            <label for="email">Email<span class="star-required">*</span></label>
+            <input type="email" name="email" id="email" placeholder="mail@website.com" required>
+
+            <label for="password">Password<span class="star-required">*</span></label>
+            <input type="password" name="password" id="password" placeholder="Min. 8 character" required>
+           
+            <br>
+            <input type="checkbox" name="isOwner" id="terms-agree" required [(ngModel)]="isOwner">
+            <p class="sentence-agree">je suis proprietaire</p>
+
+            <!-- <input type="submit" value="Sign Up" id="submit"> -->
+<br>
+            <button (click)="saveUser()" class="btn btn-success">Submit</button>
+            <p class="have-account-line">Avez-vous deja un compte? <a href="">Connectez-vous</a></p>
+        </form>
+    </div>
