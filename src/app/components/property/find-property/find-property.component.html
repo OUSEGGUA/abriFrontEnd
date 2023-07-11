@@ -1,1 +1,28 @@
-<p>find-property works!</p>
+<p class="currentUser">Vous êtes connectez en tant que: Proprietaire</p>
+
+
+
+<div class="container">
+    <a class="btn btn-outline-secondary" routerLink="/add-property">Ajouter un bien immobilier</a>
+    <div class="d-grid gap-2 col-6 mx-auto">
+
+    </div>
+    <div class="row  gx-2 my-5">
+        <div class="col-3" *ngFor="let property of properties; let i = index">
+
+            <div class="card my-2">
+                <img src="assets/images/property.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+
+                    <h5 class="card-title">Désignation : {{ property.designation }}</h5>
+                    <p class="card-text">Surface :{{ property.surface }} m²</p>
+                    <p class="card-text">Prix :{{ property.price }}</p>
+                    <p class="card-text">Nombre de pièces :{{ property.number_pieces }}</p>
+                    <div class="btns">
+                        <a class="btn btn-primary" href="http://localhost:4200/propertyById/{{property.id}}">plus de détails</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

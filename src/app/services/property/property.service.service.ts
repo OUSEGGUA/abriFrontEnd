@@ -21,5 +21,8 @@ export class PropertyServiceService {
 create(property: any): Observable<any> {
   return this.http.post(baseUrl+"/add", property); 
  }
-
+ getById(id: any): Observable<PropertyModel> {
+  console.log(id);
+  return this.http.get<PropertyModel>(baseUrl +"/findById/"+id);
+}
 }

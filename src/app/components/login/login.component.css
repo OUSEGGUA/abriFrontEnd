@@ -15,7 +15,7 @@ body {
 
 .form-main {
   background: linear-gradient(to bottom, #00000024, #00000024),
-    url(https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&w=1600)
+  
       no-repeat center;
   background-size: cover;
 height: calc(100vh);

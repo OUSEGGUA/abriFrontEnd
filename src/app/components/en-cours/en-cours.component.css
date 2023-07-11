@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajuste la hauteur du conteneur à 100% de la hauteur de la fenêtre */
+  }
+  
+  .card-img-top {
+    width: 20%; /* Ajuste la largeur de l'image à 30% du conteneur parent */
+    object-position: center; /* Centre l'image horizontalement dans le conteneur */
+  }

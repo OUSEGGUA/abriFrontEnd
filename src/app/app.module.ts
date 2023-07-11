@@ -15,6 +15,8 @@ import { FindPropertyComponent } from './components/property/find-property/find-
 import { HomeComponent } from './home/home.component';
 import { AnnounceGetByIdComponent } from './components/announce/announce-get-by-id/announce-get-by-id.component';
 import { LoginComponent } from './components/login/login.component';
+import { PropertyGetByIdComponent } from './components/property/property-get-by-id/property-get-by-id.component';
+import { EnCoursComponent } from './components/en-cours/en-cours.component';
 
 
 @NgModule({
@@ -29,6 +31,8 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     AnnounceGetByIdComponent,
     LoginComponent,
+    PropertyGetByIdComponent,
+    EnCoursComponent,
   ],
   imports: [
     BrowserModule,

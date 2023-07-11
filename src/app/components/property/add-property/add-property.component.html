@@ -1,1 +1,37 @@
-<p>add-property works!</p>
+<div class="container mt-10">
+    <h1>Ajouter un bien immobilier</h1>
+  <div>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+        <div class="form-group">
+          <label for="title">Designation</label><br>
+          <input type="text" class="form-control" id="designation" required [(ngModel)]="property.designation" name="title" />
+        </div>
+        <pre></pre>
+        <div class="form-group">
+            <label for="title">Surface</label><br>
+            <input type="text" class="form-control" id="surface" required [(ngModel)]="property.surface" name="title" />
+          </div>
+          <pre></pre>
+          <div class="form-group">
+            <label for="title">Prix</label><br>
+            <input type="text" class="form-control" id="price" required [(ngModel)]="property.price" name="title" />
+          </div>
+          <pre></pre>
+          <div class="form-group">
+            <label for="title">Nombre de pieces</label><br>
+            <input type="text" class="form-control" id="number_pieces" required [(ngModel)]="property.number_pieces" name="title" />
+          </div>
+          <pre></pre>
+        
+  
+        <button (click)="saveProperty()" class="btn btn-success">Submit</button>
+      </div>
+  
+      <div *ngIf="submitted">
+        <h4>announce was submitted successfully!</h4>
+        <button class="btn btn-success" (click)="newProperty()">Add</button>
+      </div>
+    </div>
+  </div>
+  </div>
